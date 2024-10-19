@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GetGeo</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>
+        Click the button to add the location in order to let players guess on
+        GeoGuessr
+      </h2>
+      <!-- Tolerance input alanı -->
+      <input
+        type="text"
+        id="tolerance-input"
+        placeholder="Enter view tolerance value"
+        class="styled-input"
+      />
+
+      <!-- Label input alanı -->
+      <input
+        type="text"
+        id="label-input"
+        placeholder="Enter label for this panorama"
+        class="styled-input"
+      />
+
+      <button id="send-url" class="styled-button">Let'em Guess</button>
+    </div>
+
+    <!-- For toast message -->
+    <div id="toast" class="toast"></div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
